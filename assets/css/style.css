@@ -1,57 +1,119 @@
 #mug {
   width: 200px;
   float: left;
-  margin: 1em;
+  margin: 0 20px;
 }
 
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
+  background-image: url("../images/crossline-lines.png");
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+h1 {
+  font-family: "Georgia", Times, Times New Roman, serif;
+  font-weight: bold;
+  font-size: 150%;
+  margin: 20px;
+  letter-spacing: 1px;
+}
+
+a {
+  text-decoration: none;
 }
 
 header {
-  margin: 1em;
-  background-color: aquamarine;
-  height: 5em;
-  padding: 0.5em;
+  display: block;
+  background-color: #fff;
 }
 
-nav a {
+header > content {
+  display: flex;
+  width: 960px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header > content > h1 {
+  padding: 20px;
+  margin: 0;
+  color: #fff;
+  background-color: #4aaaa5;
+}
+
+section {
+  display: block;
+  margin: 20px;
+}
+
+section > content {
+  display: block;
+  width: 960px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+section > content > h1 {
+  color: #4aaaa5;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #777;
+}
+
+section > content > p {
+  margin: 1em;
+  line-height: 150%;
+  letter-spacing: 2px;
+  text-align: justify;
+}
+
+footer {
+  display: flex;
+  height: 75px;
+  background-color: #666;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer div {
+  color: #777;
+}
+
+.teal-stripe {
+  background-color: #4aaaa5;
+  width: 100%;
+  height: 5px;
 }
 
 nav {
   display: flex;
-  background-color: pink;
-  height: 1.5em;
-  justify-content: flex-end;
-  align-items: center;
+  color: #777;
+  letter-spacing: 1px;
 }
 
-nav a::after {
-  content: "|";
-  margin: 5px;
+nav a {
+  color: #777;
+  border-right: 2px solid #777;
+  padding: 0 20px;
 }
 
-nav a:last-child::after {
-  content: "";
-  margin: 0px;
-  padding: 0px;
+nav a:hover {
+  text-decoration-line: underline;
+  text-decoration-color: #4aaaa5;
+  text-decoration-style: dashed;
 }
 
-section {
-  width: 90%;
-  border: 1px solid lightgray;
-  margin: 1em;
+nav a:first-child {
+  padding-left: 0;
 }
 
-section p {
-  margin: 1em;
-  border: 1px solid red;
-}
-
-footer {
-  clear: both;
-  height: 5em;
-  padding: 0.5em;
+nav a:last-child {
+  border: none;
+  padding-right: 0;
 }
 
 .clearfix::after {
