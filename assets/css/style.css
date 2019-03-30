@@ -98,16 +98,19 @@ nav {
   letter-spacing: 1px;
 }
 
-nav a {
+a {
   color: #777;
-  border-right: 2px solid #777;
-  padding: 0 20px;
 }
 
-nav a:hover {
+a:hover {
   text-decoration-line: underline;
   text-decoration-color: #4aaaa5;
   text-decoration-style: dashed;
+}
+
+nav a {
+  border-right: 2px solid #777;
+  padding: 0 20px;
 }
 
 nav a:first-child {
